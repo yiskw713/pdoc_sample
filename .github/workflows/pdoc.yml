@@ -1,5 +1,16 @@
 name: generate_pdoc
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "*.py"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "*.py"
+  workflow_dispatch:
 
 jobs:
   generate_pdoc:
@@ -23,7 +34,7 @@ jobs:
       - name: Add path for Poetry
         run: echo "$HOME/.poetry/bin" >> $GITHUB_PATH
       
-      # インストールした Poetry を使って必要な Python パッケージをインストールする
+      # install prod dependencies
       - name: Install Dependencies
         run: poetry install --no-interaction --no-dev
 
