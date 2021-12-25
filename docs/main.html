@@ -49,8 +49,8 @@
         &#34;&#34;&#34;
         return self.a + x
 
-    def __call__(self, input_str: str) -&gt; str:
-        &#34;&#34;&#34;Sample __call__ method.
+    def call(self, input_str: str) -&gt; str:
+        &#34;&#34;&#34;Sample call method.
         Args:
             x: str
         Return:
@@ -111,8 +111,8 @@
         &#34;&#34;&#34;
         return self.a + x
 
-    def __call__(self, input_str: str) -&gt; str:
-        &#34;&#34;&#34;Sample __call__ method.
+    def call(self, input_str: str) -&gt; str:
+        &#34;&#34;&#34;Sample call method.
         Args:
             x: str
         Return:
@@ -122,6 +122,32 @@
 </details>
 <h3>Methods</h3>
 <dl>
+<dt id="main.SampleClass.call"><code class="name flex">
+<span>def <span class="ident">call</span></span>(<span>self, input_str: str) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sample call method.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>x</code></strong></dt>
+<dd>str</dd>
+</dl>
+<h2 id="return">Return</h2>
+<p>str</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def call(self, input_str: str) -&gt; str:
+    &#34;&#34;&#34;Sample call method.
+    Args:
+        x: str
+    Return:
+        str
+    &#34;&#34;&#34;
+    return self.c + input_str</code></pre>
+</details>
+</dd>
 <dt id="main.SampleClass.sample"><code class="name flex">
 <span>def <span class="ident">sample</span></span>(<span>self, x: int) ‑> int</span>
 </code></dt>
@@ -164,6 +190,7 @@
 <li>
 <h4><code><a title="main.SampleClass" href="#main.SampleClass">SampleClass</a></code></h4>
 <ul class="">
+<li><code><a title="main.SampleClass.call" href="#main.SampleClass.call">call</a></code></li>
 <li><code><a title="main.SampleClass.sample" href="#main.SampleClass.sample">sample</a></code></li>
 </ul>
 </li>
