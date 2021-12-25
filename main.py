@@ -12,7 +12,7 @@ class SampleClass(object):
         self.b = b
         self.c = c
 
-    def __call__(self, x: int) -> int:
+    def sample(self, x: int) -> int:
         """Sample method.
         Args:
             x: integer
@@ -20,3 +20,12 @@ class SampleClass(object):
             integer
         """
         return self.a + x
+
+    def __call__(self, input_str: str) -> str:
+        """Sample __call__ method.
+        Args:
+            x: str
+        Return:
+            str
+        """
+        return self.c + input_str

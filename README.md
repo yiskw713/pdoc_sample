@@ -9,5 +9,5 @@ poetry install
 ## Generate documents
 
 ```sh
-poetry run pdoc main.py -o docs
+poetry run pdoc --html -o docs --force main.py
 ```
