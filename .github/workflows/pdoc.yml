@@ -25,7 +25,7 @@ jobs:
       
       # インストールした Poetry を使って必要な Python パッケージをインストールする
       - name: Install Dependencies
-        run: poetry install --no-interaction
+        run: poetry install --no-interaction --no-dev
 
       # pdoc
       - name: Pdoc
