@@ -21,8 +21,8 @@ class SampleClass(object):
         """
         return self.a + x
 
-    def __call__(self, input_str: str) -> str:
-        """Sample __call__ method.
+    def call(self, input_str: str) -> str:
+        """Sample call method.
         Args:
             x: str
         Return:
