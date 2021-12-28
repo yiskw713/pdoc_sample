@@ -1,3 +1,8 @@
+"""This documentation was updated by github actions.
+Please see my blog for the detail: https://yiskw713.hatenablog.com/pdoc-github-actions
+"""
+
+
 class SampleClass(object):
     """This is a smaple class."""
 
